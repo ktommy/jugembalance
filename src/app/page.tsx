@@ -45,16 +45,11 @@ export default function Page() {
         </button>
       </>
       ) : (
-        <button onClick={() => connect({ connector: metamask })}
-        className="bg-orange-500 text-white font-semibold px-4 py-2 rounded-lg shadow hover:bg-orange-600 transition"
-       >
-<Image
-  src="https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/metamask-fox.svg"
-  alt="MetaMask"
-  width={24}
-  height={24}
-  priority
-/>
+        <button
+          onClick={() => connect({ connector: metamask })}
+          className="flex items-center gap-2 bg-orange-400 text-white font-semibold px-6 py-2 rounded-lg shadow hover:bg-orange-500 transition min-w-[200px]"
+        >
+          <Image src="/metamask.svg" alt="MetaMask" width={24} height={24} priority />
           Connect MetaMask
         </button>
       )}
